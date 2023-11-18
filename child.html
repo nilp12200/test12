@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment App Sidebar</title>
+    <link rel="stylesheet" href="child.css">
+    
+           
+    <div class="sidebar">
+        <ul>
+            <h1>Payment App</h1>
+            <li><a href="#" id="Home">Home</a></li>
+            <li><a href="#" id="transactions">Transactions</a></li>
+            <li><a href="#" id="ScanQR">ScanQR</a></li>
+            <li><a href="#" id="Profile">Profile</a></li>
+            
+        </ul></nav>
+    </div>
+    <div class="content">
+        <div id="Home-content" class="page"><!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Static Page Design</title>
+                <style> /* Reset some default styles */
+                body, h1, p {
+                margin: 0;
+                padding: 0;
+            
+                }
+            
+            /* Define the overall page container */
+                .container {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                }
+            
+            /* Header styles */
+                header {
+                background-color: rgba(84, 3, 108, 0.973);
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+                }
+            
+            /* Navigation menu styles */
+                nav {
+                background-color: #333;
+                padding: 10px;
+                }
+            
+                nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                }
+            
+                nav ul li {
+                display: inline;
+                margin-right: 20px;
+                }
+            
+                nav ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                }  
+            
+            /*  Main content styles */
+                .main-content {
+                background-color: #f9f9f9;
+                padding: 20px;
+                }
+            
+            /* Footer styles */
+                footer {
+                background-color: #00bcd4;
+                color: #fff;
+                padding: 10px 0;
+                text-align: center;
+                }
+            
+                img {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                }
+            
+                .userinfo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                max-width: 300px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                }
+            
+            .hero {
+                background-color: rgba(84, 3, 108, 0.973);
+                text-align: center;
+                padding: 50px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+            
+            /* Add additional styles here */
+            
+            .clickable-image {
+                cursor: pointer;
+            }
+            
+            /* Modify styles for specific elements or sections here */
+            .userinfo {
+                background: aqua;
+            }
+            
+            .profile-info {
+                text-align: center;
+                width:;
+            }
+            
+            .profile-picture {
+                max-width: 2000px;
+                top:50px;
+                display: block;
+                margin: 0 auto;
+                border-radius: 50000%;
+            }
+            
+            .user-details {
+                margin-top: 120px;
+            }
+            
+                    
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <header>
+                        <h1>Welcome </h1>
+                    </header>
+                    
+                    <div id="logo">
+                        <img src="qr.jpeg" alt="" id="clickable-image">
+                    </div>
+                    
+                
+                    <section class="userinfo">
+                     
+                        <p>UPI ID: <span id="upi">upi taken by database</span></p>
+                        <p>Account Balance: RS. 1,000.00</p>
+                        
+                    </section><div class="container">
+                     
+                        <div class="profile-info">
+                            <img src="profile.jpeg" alt="Profile Picture" class="profile-picture">
+                            
+                        </div>
+                        
+                    </div>
+                    <section class="hero">
+                        <div class="container">
+                         
+                          <p>
+                            Are you tired of dealing with complicated payment processes? Look no
+                            further! MiniPay is here to simplify your payments, whether you're
+                            managing personal expenses or running a business. With our
+                            user-friendly interface and secure technology, you can now send and
+                            receive payments with ease.
+                          </p>
+                         
+                        </div>
+                      </section>
+                      
+                    <!--<div class="sidebar">
+                        <h1>Pay with</h1>
+                        <ul>
+                            <li><a href="#">Bank</a></li>
+                            <li><a href="history.html">Transactions</a></li>
+                            <li><a href="qr.html">scan</a></li>
+                            <li><a href="#">card</a></li>
+                        </ul>
+                    </div>-->
+              
+                    <footer>
+                        &copy; 2023 Minipay
+                    </footer>
+                </div>
+            
+                <script>
+                    // JavaScript code to handle the image click event
+                    document.getElementById("clickable-image").addEventListener("click", function() {
+                        // Redirect to another page when the image is clicked
+                        window.location.href = "qr.html"; // Replace with the URL you want to navigate to
+                    });
+                </script>
+            </body>
+            </html>
+            
+            </div>
+        <div id="transactions-content" class="page"><!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Transaction History</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f2f2f2;
+                    }
+                    
+                    header {
+                        background: linear-gradient(90deg, #3e4095, #84036c);
+                        color: #fff;
+                        text-align: center;
+                        padding: 1rem;
+                    }
+            
+                    h1 {
+                        font-size: 28px;
+                        text-transform: uppercase;
+                        text-decoration: underline;
+                        text-decoration-color: aqua;
+                    }
+            
+                    main {
+                        padding: 2rem;
+                    }
+            
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 1rem;
+                        background-color: #fff;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    }
+            
+                    th, td {
+                        text-align: left;
+                        padding: 1rem;
+                        border-bottom: 1px solid #ddd;
+                    }
+            
+                    th {
+                        background: linear-gradient(90deg, #3e4095, #84036c);
+                        color: #fff;
+                        text-transform: uppercase;
+                    }  #logo{
+                        position:absolute;
+                        top:30px;
+                        right:98px
+                    }
+                    
+                </style>
+            </head>
+            <body>
+                <header>
+                    <h1>Payment Transaction History</h1>
+                </header>
+                <main>
+                    <table id="transactionTable">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Transaction ID</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Transaction data will be added here dynamically using JavaScript -->
+                        </tbody>
+                    </table>
+                </main>
+                <script src="history.js"></script>
+            </body>
+            </html>
+            
+            </div>
+        <div id="ScanQR-content" class="page"><!-- Index.html file -->
+            <!-- Index.html file -->
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	 <!--<link rel="stylesheet"
+		href="qr.css">  -->
+		<style>/* style.css file*/
+			body { 
+				display: flex; 
+				justify-content: center; 
+				margin: 0; 
+				padding: 0; 
+				height: 100vh; 
+				box-sizing: border-box; 
+				text-align: center; 
+				{% comment %} background-color: rgba(84, 3, 108, 0.973); {% endcomment %}
+			} 
+			.container { 
+				width: 100%; 
+				max-width: 500px; 
+				margin: 5px; 
+			} 
+			
+			.container h1 { 
+				color: #ffffff; 
+			} 
+			
+			.section { 
+				background-color: #ffffff; 
+				padding: 50px 30px; 
+				border: 1.5px solid #b2b2b2; 
+				border-radius: 0.25em; 
+				box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25); 
+			} 
+			
+			#my-qr-reader { 
+				padding: 20px !important; 
+				border: 1.5px solid #b2b2b2 !important; 
+				border-radius: 8px; 
+			} 
+			
+			#my-qr-reader img[alt="Info icon"] { 
+				display: none; 
+			} 
+			
+			#my-qr-reader img[alt="Camera based scan"] { 
+				width: 100px !important; 
+				height: 100px !important; 
+			} 
+			
+			button { 
+				padding: 10px 20px; 
+				border: 1px solid #b2b2b2; 
+				outline: none; 
+				border-radius: 0.25em; 
+				color: white; 
+				font-size: 15px; 
+				cursor: pointer; 
+				margin-top: 15px; 
+				margin-bottom: 10px; 
+				background-color: #008000ad; 
+				transition: 0.3s background-color; 
+			} 
+			
+			button:hover { 
+				background-color: #008000; 
+			} 
+			
+			#html5-qrcode-anchor-scan-type-change { 
+				text-decoration: none !important; 
+				color: #1d9bf0; 
+			} 
+			
+			video { 
+				width: 100% !important; 
+				border: 1px solid #b2b2b2 !important; 
+				border-radius: 0.25em; 
+			}
+			</style>
+	<title>QR Code Scanner / Reader 
+	</title> 
+</head> 
+
+<body>  <header>  <h1>Scan QRCODE</h1></header>
+	<div class="container"> 
+	<!--	<h1>Scan QR Codes</h1> -->
+		<div class="section"> 
+			<div id="my-qr-reader"> 
+			</div> 
+		</div> 
+	</div> 
+	<script
+		src="https://unpkg.com/html5-qrcode"> 
+	</script> 
+	<script src="qr.js"></script> 
+</body> 
+
+</html>
+
+            
+            </div>
+        <div id="Profile-content" class="page"><!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Payment Application - Profile</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4; 
+                        background-color: purple;
+                        margin: 0;
+                        padding: 0;
+                    }
+            
+                    .container {
+                        max-width: 800px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                    }
+            
+                    h1 {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+            
+                    .profile-info {
+                        text-align: center;
+                    }
+            
+                    .profile-picture {
+                        max-width: 200px;
+                        display: block;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                    }
+            
+                    .user-details {
+                        margin-top: 20px;
+                    }
+            
+                    p {
+                        margin: 10px 0;
+                    }
+                   
+                </style>
+            </head>
+            <body>
+         
+                <div class="container">
+                    <header>  <h1>MY Profile</h1></header>
+                    
+                    <div class="profile-info">
+                        <img src="profile.jpeg" alt="Profile Picture" class="profile-picture">
+                       
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Email:</strong> john.doe@example.com</p>
+                    </div>
+                    <div class="user-details">
+                        <h2>User Details</h2>
+                        <p><strong>Username:</strong> johndoe123</p>
+                        <p><strong>Phone Number:</strong> (555) 555-5555</p>
+                        <p><strong>Address:</strong> 123 Main St, City, Country</p>
+                    </div>
+                </div>
+            </body>
+            </html>
+            
+            </div>
+    </div>
+
+   
+    <script>
+        const pages = document.querySelectorAll('.page');
+        const links = document.querySelectorAll('.sidebar a');
+    
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.id + '-content';
+    
+                pages.forEach(page => {
+                    page.style.display = 'none';
+                });
+    
+                const targetPage = document.getElementById(targetId);
+                targetPage.style.display = 'block';
+    
+                // Update the URL in the browser without page reload
+                history.pushState(null, '', `/${link.id}`);
+            });
+        });
+    
+        // Handle back/forward navigation
+        window.addEventListener('popstate', () => {
+            const currentPageId = location.pathname.replace('/', '');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            const currentPage = document.getElementById(currentPageId + '-content');
+            currentPage.style.display = 'block';
+        });
+    </script>
+    
+</body>
+</html>
